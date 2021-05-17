@@ -1,0 +1,123 @@
+/* Note: This example only works with Windows Insider Preview Builds 16237+ or the Fall Creators Update. */
+
+body { 
+	font-family: 'Exo 2', sans-serif;
+	display: grid;
+	grid-template-areas: 
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 15% 1fr 18%;
+	grid-gap: 0px;
+  height: 100vh;
+  margin: 0px;  
+  background-color: #73FAAA;
+}
+
+header {
+	background: #66DE75;
+	grid-area: header;
+}
+
+nav {
+	background: #66DE75;
+	grid-area: nav;
+    margin: 0; 
+}
+
+section {
+	background: #ABABAB;
+	grid-area: section;
+    background-color: #f3f3f3;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: block;
+    box-shadow: 5px 5px 5px 5px #000;    
+}
+
+aside {
+	background: #EDFA73;
+	grid-area: aside;
+     
+}
+
+footer {
+	background: #EDFA73;
+	grid-area: footer;
+}
+
+header, nav, section, aside, footer {
+	padding: 0px;
+}
+
+.btn {
+
+    background-color: #EDFA73;
+    border: none;
+    padding: 20px;
+    margin: 2px;
+    text-decoration: none;
+    margin-left: -10px;
+    width:200px !important
+    
+
+
+}
+.btn:hover {
+
+    background-color: #66DE75;
+    padding: 22px;
+    box-shadow: 5px 5px #000;
+
+
+}
+
+.nav-itens, li{
+
+    margin-top: 10px;
+    padding: 10px;
+}
+
+iframe {
+
+    display: inline-block;
+
+}
+
+.header-icon {
+
+    max-height: 60px;
+    float: left;
+    margin: 10px;
+}
+
+.menu {
+
+    text-align: center;
+    background-color: #EDFA73;
+    padding: 8px;
+    box-shadow: 5px 5px #000;
+    margin-left: -10px;
+
+}
+
+
+.copyright,.ao-lado,.conteudo-txt {
+
+    margin-left: 10px;
+
+}
+
+.img-corpo {
+
+    float: right;
+    max-height: 400px;
+    border-style: solid;
+    border-width: 2px;
+    margin: 2px;
+
+}
